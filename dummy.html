@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main" class="container">
+        <div id="topBar" class="row justify-content-between">
+            <div id="level" style="col-md">
+                Level 1
+            </div>
+            <div id="lifebar" style="col-md">
+                <img id="life3" src="life.png" alt="">
+                <img id="life2" src="life.png" alt="">
+                <img id="life1" src="life.png" alt="">
+            </div>
+        </div>
+        <div id='question'>
+            <h1>I + I <span id='answer' onclick='correctAnswer()'>=</span></h1>
+        </div>
+        <button id="option1" onclick="wrongAnswer()" type="button" class="btn btn-outline-primary btn-lg btn-block">Dua</button>
+        <button id="option2" onclick="wrongAnswer()" type="button" class="btn btn-outline-primary btn-lg btn-block">2</button>
+        <button id="option3" onclick="wrongAnswer()" type="button" class="btn btn-outline-primary btn-lg btn-block">Jendela</button>
+        <button id="option4" onclick="wrongAnswer()" type="button" class="btn btn-outline-primary btn-lg btn-block">BUKAN DUA</button>
+
+        <div id="bottomBar" class="row justify-content-between">
+            <div id="restart">
+                <button onclick="" type="button" class="btn btn-danger btn-sm">Restart</button>
+            </div>
+            <div id="nextQuiz">
+                <button onclick="" type="button" class="btn btn-success btn-sm">Next Quiz >></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
